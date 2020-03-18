@@ -21,6 +21,7 @@
 	<dependencies>
 <!--	when not included data jpa and h2 dependency, JAXB2 does not work. So it forced me to add these dependency and i could not solve why this happen
 		Probably, JAXB2 uses a dependency from data jpa and h2.
+		But it works in STS without jpa and h2 dependencies.
 -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
