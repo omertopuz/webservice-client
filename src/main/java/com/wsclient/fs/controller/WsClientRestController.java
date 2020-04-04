@@ -18,7 +18,7 @@ public class WsClientRestController {
     @Autowired
     private WsClientService service;
 
-    @GetMapping("getfileresponse")
+    @PostMapping("file-response")
     public ResponseFileServer getfileresponse(@Valid @RequestBody RequestGetFile request){
         GetFileResponse response =  service.getFileFromFileServer(request);
         return new ResponseFileServer(response.getGetFileResult().getFileData().getBlobData(),response.getGetFileResult().getFileName());
